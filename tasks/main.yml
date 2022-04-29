@@ -1,0 +1,24 @@
+---
+- name: Install additional cli-tools
+  become: yes
+  apt:
+    update_cache: yes
+    pkg:
+      - aptitude
+      - bc
+      - fsarchiver
+      - git
+      - iftop
+      - iotop
+      - iperf3
+      - nano
+      - net-tools
+      - nmap
+      - speedtest-cli
+      - tcpdump
+      - tmux
+      - traceroute
+      - tree
+      - tshark
+      - vlan
+    state: present
